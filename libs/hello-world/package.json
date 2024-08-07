@@ -1,0 +1,20 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "a demo library that says hello",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexopticalHenno/issue-repro-electron-builder-local-dependency.git"
+  },
+  "author": "Henno Lauinger",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/flexopticalHenno/issue-repro-electron-builder-local-dependency/issues"
+  },
+  "homepage": "https://github.com/flexopticalHenno/issue-repro-electron-builder-local-dependency#readme",
+  "dependencies": {}
+}

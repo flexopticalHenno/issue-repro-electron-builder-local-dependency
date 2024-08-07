@@ -1,0 +1,41 @@
+{
+  "name": "issue-repro-electron-builder-local-dependency",
+  "version": "1.0.0",
+  "description": "A project that reproduces an issue with local dependencies in electron-builder (#8401) ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "electron-builder": "electron-builder",
+    "start": "electron ./index.js",
+    "build": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexopticalHenno/issue-repro-electron-builder-local-dependency.git"
+  },
+  "keywords": [
+    "electron-builder"
+  ],
+  "author": "Henno Lauinger",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/flexopticalHenno/issue-repro-electron-builder-local-dependency/issues"
+  },
+  "homepage": "https://github.com/flexopticalHenno/issue-repro-electron-builder-local-dependency#readme",
+  "dependencies": {
+    "electron-updater": "^6.2.1",
+    "hello-world": "file:libs/hello-world"
+  },
+  "build": {
+    "productName": "Issue Reproduction",
+    "appId": "net.flexoptix.issue-repro-electron-builder-local-dependency",
+    "files": [
+      "**/*",
+      "!libs"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3"
+  }
+}
